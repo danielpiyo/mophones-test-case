@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border" mode="md">
+  <ion-toolbar>
+    <ion-button data-testid="back-button" (click)="goBack()" fill="clear" size="small" slot="start">
+      <ion-icon name="chevron-back" style="font-size: 24px;"></ion-icon>
+    </ion-button>
+    <ion-title data-testid="title" style="padding: 0px;">Transaction List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <div data-testid="logo-img">
+      <img src="assets/imgs/MO-Logo-01_160x.webp">
+    </div>
+    <ion-chip [outline]="true"> All your transactions as of 15-01-2024</ion-chip>
+    <hr>
+    <div data-testid="transaction-list" class="item_div" *ngFor="let item of [1,2,3,4,5,6,7]; let i = index">
+      <div class="flex_div">
+        <div class="light_div">
+          <ion-icon name="document-text"></ion-icon>
+        </div>
+        <div class="tab_detail" data-testid="transaction-label-details">
+          <ion-label class="bold_lbl">Payment: {{i+1}} - </ion-label>
+          <ion-label class="bold_lbl">ksh 50/=</ion-label>
+          <ion-label class="grey_lbl">2nd January 2024</ion-label>
+        </div>
+        <ion-label class="remove_lbl" data-testid="detail-list">Details</ion-label>
+      </div>
+    </div>
+  </div>
+</ion-content>

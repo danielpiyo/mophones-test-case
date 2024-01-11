@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+    <string name="app_name">mophones</string>
+    <string name="title_activity_main">mophones</string>
+    <string name="package_name">co.mophones.app</string>
+    <string name="custom_url_scheme">co.mophones.app</string>
+</resources>

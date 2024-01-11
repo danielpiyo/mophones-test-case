@@ -1,0 +1,86 @@
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="gradient_div">
+      <div class="abs_round"></div>
+      <div class="flex_header">
+        <ion-label data-testid="home-label">Home</ion-label>
+
+        <ion-badge data-testid="notifications-badge" color="primary">2<ion-icon
+            name="notifications"></ion-icon></ion-badge>
+
+      </div>
+    </div>
+
+    <div class="container_div">
+
+      <div class="white_box">
+        <div class="flex_div">
+          <ion-label class="span_lbl">Product <span data-testid="product-section">Mophones</span></ion-label>
+          <ion-label class="span_lbl">Last Payment: <span data-testid="last-payment-section">3 days
+              ago</span></ion-label>
+        </div>
+
+        <div>
+          <div class="half-circle">
+            <div class="inner_circle">
+              <div class="lock">
+                <img src="assets/imgs/MO-Logo-01_160x.webp" height="30px" width="auto">
+              </div>
+              <ion-label data-testid="time-to-lock-label" class="grey_lbl">Time to lock</ion-label>
+              <ion-label class="price_lbl">2d: 7h: 30m</ion-label>
+              <ion-label data-testid="amount-to-pay-label" class="grey_lbl">Amount to pay: 50 ksh/=</ion-label>
+            </div>
+          </div>
+          <div class="abs_div">
+            <ion-label>0%</ion-label>
+            <ion-label>100%</ion-label>
+          </div>
+        </div>
+
+      </div>
+
+      <ion-grid fixed>
+        <ion-row>
+
+          <ion-col size="6">
+            <ion-button expand="block" (click)="goToMyAccount()">
+              <ion-icon name="person-circle-outline"></ion-icon> <br>
+              <ion-label>My Account</ion-label>
+            </ion-button>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-button expand="block" (click)="goToPayment()">
+              <ion-icon name="cash-outline"></ion-icon>
+              <ion-label>Pay Now</ion-label>
+            </ion-button>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid fixed>
+        <ion-row>
+
+          <ion-col size="6">
+            <ion-button expand="block" (click)="goToUnlock()">
+              <ion-icon name="lock-open-outline"></ion-icon>
+              <ion-label>Unlock Now</ion-label>
+            </ion-button>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-button expand="block" (click)="goToContactus()">
+              <ion-icon name="call-outline"></ion-icon>
+              <ion-label>Contact us</ion-label>
+            </ion-button>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+
+    </div>
+
+  </div>
+</ion-content>
