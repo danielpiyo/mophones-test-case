@@ -5,7 +5,6 @@
 DOWNLOAD: https://drive.google.com/file/d/1kTYDBpWRnka1FSuyxsuyBtqodh590cSk/view
 
 This App is meant to show the clients how they will view their balances and upcoming payments, View their account statements and transaction history, and also give them an interface for making payments.
-Extra functionalities can be added in case you want to perform a specific function or use dynamic data from a database for example. 
 
 The App has three functional tabs;
 
